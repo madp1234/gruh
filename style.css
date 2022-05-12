@@ -1,0 +1,246 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+#navbar
+{
+    display : flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+/* Navigation Bar */
+/*  Navigation Bar: Logo and Image */
+#logo
+{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/*navigation bar : list styling*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+    
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: no-repeat center center/cover;
+    background-image: url("homemade.jpg") ;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.sevises-container{
+    height: 300px;
+}
+#servises{
+    margin: 1px;
+    height: 390px;
+    display: flex;
+}
+
+#servises .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 2px 48px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+
+}
+#servises.box img{
+    height: 160px;
+    width: 160px;
+    margin: auto;
+    display: block;
+}
+#servises.box p{
+    font-family: 'Bree Serif', serif;
+
+}
+.card-item img{
+    width: 160px;
+    height: 160px;
+
+}
+.card{
+    
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Bree Serif', serif;
+
+
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#About{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+}
+
+#About::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    background: no-repeat center center/cover;
+    background-image: url("about.jpg");
+
+}
+
+#About h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#About p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: no-repeat center center/cover;
+    background-image: url("co.jpg");
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5 rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
